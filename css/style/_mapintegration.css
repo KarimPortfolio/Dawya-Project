@@ -1,0 +1,126 @@
+
+.body{
+    position: relative;
+    z-index: -10;
+}
+.body::after{
+     content: "";
+     background-color: #000;
+     position: absolute;
+     width: 100%;
+     height: 100vh;
+     top: 0;
+     left: 0;
+     opacity: 0.80;
+     overflow-y:hidden;
+     z-index: 0;
+}
+
+.googleMap{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms ease-in-out;
+    z-index: 500;
+}
+
+.googleMap iframe{
+    width: 90%;
+    height: 90%;
+}
+
+.googleMap .closeIcone1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffffff37;
+    filter: blur(50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    position: relative;
+    top: -43%;
+}
+
+.googleMap .closeIcone1 svg{
+    color: #FFFF;
+}
+
+.googleMap .closeIcone1 span{
+    position: relative;
+}
+
+.googleMap .closeIcone1 span:first-child{
+    content: "";
+    background-color: #FFFF;
+    width: 20px;
+    height: 1.5px;
+    position: absolute;
+    top: 23px;
+    left: 13px;
+    transform: rotate(-45deg);
+    z-index: 500;
+    
+}
+.googleMap .closeIcone1 span:last-child{
+    content: "";
+    background-color: #FFFF;
+    width: 20px;
+    height: 1.5px;
+    position: absolute;
+    top: 23px;
+    left: 13px;
+    transform: rotate(45deg);
+    z-index: 500;
+}
+
+.googleMap .closeIcone1:hover .close{
+    animation: changeRotate 1s 0.4ms ease-in-out;
+}
+
+.googleMap .closeIcone1:hover{
+    border: 2px solid #FFFF;
+}
+
+@keyframes changeRotate{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width:776px) {
+    .googleMap .closeIcone1{
+        width: 30px;
+        height: 30px;
+        top: -46%;
+        margin-right: 10px;
+    }
+
+    .googleMap .closeIcone1 svg{
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .googleMap iframe{
+        margin-top: 40px;
+        width: 100%;
+        position: relative;
+        left: 22px;
+    }
+
+    .googleMap .closeIcone1{
+        border: transparent;
+    }
+    .googleMap .closeIcone1 span:first-child{
+        top: 12px;
+        left: 2px;
+    }
+    .googleMap .closeIcone1 span:last-child{
+        top: 12px;
+        left: 2px;
+    }
+}
