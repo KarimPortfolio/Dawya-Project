@@ -7,13 +7,9 @@ function handleHamburgerMenuClick () {
    if ( c % 2 != 0) {
       var navbar = document.querySelector(".navbar-collaps");
       var body = document.querySelector("body");
-      var headerSocialsLinks = document.querySelector(".header__socials__links");
-      var section = document.querySelector("section");
       navbar.classList.remove("navbar-collaps");
       navbar.classList.add("navbar-collaps-clicked");
       body.style.overflowY = 'hidden';
-      headerSocialsLinks.style.display = 'none';
- 
       setTimeout( () => {
          body.classList.add('shadow2');
       },50 )
@@ -21,31 +17,30 @@ function handleHamburgerMenuClick () {
   else{
       var navbar = document.querySelector(".navbar-collaps-clicked");
       var body = document.querySelector("body");
-      var headerSocialsLinks = document.querySelector(".header__socials__links");
-      var section = document.querySelector("section");
       navbar.classList.remove("navbar-collaps-clicked");
       navbar.classList.add("navbar-collaps");
       body.style.overflowY = 'scroll';
-      headerSocialsLinks.style.display = 'flex';
-      section.style.visibility = "visible";
-      body.classList.remove('shadow2');
-
    }
 }
 
+//call the function
 hamburger__menu.addEventListener('click' , () => {
    handleHamburgerMenuClick();
 })
 
- $(document).ready( function () {
+//jQuery Scripts
+$(document).ready( function () {
     $(".hamburger__menu").click(
          function () {
              $("#first__one").toggleClass('hamburger__animate__one');
              $("#last__one").toggleClass('hamburger__animate__two');
              $("#middle__one").toggleClass('hamburger__animate__three');
              $("body").toggleClass('shadow2');
-             // $(".hamburger__menu").toggleClass(".hamburger__menu2");
-             // $(".hamburger__menu2").toggleClass(".hamburger__menu");
+         }
+    );
+    $(".hamburger__menu2").click(
+         function () {
+             $("body").toggleClass('shadow2');
          }
     );
   
@@ -54,53 +49,22 @@ hamburger__menu.addEventListener('click' , () => {
           $(".PortfolioIntro").show(1200);
           $(".introSocialmedia").show(1200);
           $(".scrollDown").show(1200);
+          console.log('clicked from jQuery');
           if (window.innerWidth < 992) {
                handleHamburgerMenuClick();
                $('section').css('visibility' , 'visible');
                $('.navbar-collaps-clicked').toggleClass('navbar-collaps');
-               $('.navbar-collaps-clicked').toggleClass('navbar-collaps-clicked');
-               $('html').removeClass('shadow2');
+               $('body').toggleClass('shadow2');
                $('html').css('overflowY', 'scroll');
                $("#first__one").toggleClass('hamburger__animate__one');
                $("#last__one").toggleClass('hamburger__animate__two');
                $("#middle__one").toggleClass('hamburger__animate__three');
           }
     })
-
-    $(".services__more__content1").click( () => {
-         $(".hidden__text1").show(600);
-         $(".services__more__content1").hide('slow');
-    } )
-    $(".services__more__content2").click( () => {
-         $(".hidden__text2").show(600);
-         $(".services__more__content2").hide('slow');
-    } )
-    $(".services__more__content3").click( () => {
-         $(".hidden__text3").show(600);
-         $(".services__more__content3").hide('slow');
-    } )
-
-
-    $(".services__less__content1").click( () => {
-         $(".hidden__text1").hide(600);
-         $(".services__more__content1").show('slow');
-    } )
-    $(".services__less__content2").click( () => {
-         $(".hidden__text2").hide(600);
-         $(".services__more__content2").show('slow');
-    } )
-    $(".services__less__content3").click( () => {
-         $(".hidden__text3").hide(600);
-         $(".services__more__content3").show('slow');
-    } )
-
 } )
 
 
-
-
-
-
+// navbar change style on scroll
 window.addEventListener('scroll' , () => {
  var header  = document.querySelector("header");
  var headerLogo = document.querySelector(".logo img");

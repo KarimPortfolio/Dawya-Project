@@ -95,47 +95,7 @@ nav.stroke ul li a:hover:after {
     margin: 4px;
 }
 
-.header__socials__links{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 8px;
-    top: 70%;
-    background-color: #eeee;
-    filter: blur(60);
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    position: fixed;
-    z-index: 500;
-}
 
-.header__socials__links i{
-    font-size: 30px;
-    color: #81412c;
-    margin: 5px 0px;
-    position: relative;
-    opacity: 0.75;
-    transition: all 400ms ease-in-out;
-}
-.header__socials__links i:hover{
-    opacity:1;
-}
-
-.header__socials__links i::after{
-    content: "";
-    width: 45px;
-    height: 1px;
-    background-color: #eeee;
-    position: absolute;
-    top: 35px;
-    left: -10px;
-    opacity: 0.30;
-}
-
-.last__socials__link::after{
-    opacity: 0 !important;
-}
 
 nav div #middle__one{
     width:20px;
@@ -290,5 +250,10 @@ nav div #middle__one{
 
     nav .hamburger__menu{
         margin-right: 8px !important;
+    }
+
+    nav a img{
+        width: 80px;
+        height:50px;
     }
 }
