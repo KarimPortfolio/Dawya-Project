@@ -20,7 +20,7 @@
     width: 100%;
     height: 100vh;
     position: absolute;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     transition: all 400ms ease-in-out;
