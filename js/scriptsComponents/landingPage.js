@@ -1,4 +1,18 @@
 
+// Hnadling the sounds controls
+var muteBtn = document.querySelector('.mute_button');
+muteBtn.style.display = 'none';
+
+muteBtn.addEventListener('click' , () => {
+    var soundBtn = document.querySelector('.sound_on_button');
+    setTimeout( () => {
+        soundBtn.style.display = 'flex';
+        muteBtn.style.display = 'none';
+    },3)
+})
+
+
+
 var hamburger__menu = document.querySelector(".hamburger__menu");
 var c = 0;
 
@@ -61,6 +75,13 @@ $(document).ready( function () {
                $("#middle__one").toggleClass('hamburger__animate__three');
           }
     })
+
+    //sound controls
+    $('.sound_on_button').click( () => {
+        $('.sound_on_button').hide();
+        $('.mute_button').show();
+    })
+
 } )
 
 
