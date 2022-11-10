@@ -79,7 +79,7 @@
 }
 
 .googleMap .closeIcone1:hover .close{
-    animation: changeRotate 1s 0.4ms ease-in-out;
+    animation: changeRotate 10s 0.4ms ease-in-out;
 }
 
 .googleMap .closeIcone1:hover{
@@ -87,6 +87,33 @@
 }
 
 @keyframes changeRotate{
+    10%{
+        transform: rotate(180deg);
+    }
+    20%{
+        transform: rotate(180deg);
+    }
+    30%{
+        transform: rotate(180deg);
+    }
+    40%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    60%{
+        transform: rotate(180deg);
+    }
+    70%{
+        transform: rotate(180deg);
+    }
+    80%{
+        transform: rotate(180deg);
+    }
+    90%{
+        transform: rotate(180deg);
+    }
     100%{
         transform: rotate(180deg);
     }
@@ -122,5 +149,23 @@
     .googleMap .closeIcone1 span:last-child{
         top: 12px;
         left: 2px;
+    }
+}
+
+@media (max-width:350px) {
+    .googleMap iframe{
+        margin-top: 40px;
+        width: 100%;
+        position: relative;
+        left: 10px;
+    }
+
+    .googleMap .closeIcone1 span:first-child{
+        top: 12px;
+        left: -16px;
+    }
+    .googleMap .closeIcone1 span:last-child{
+        top: 12px;
+        left: -16px;
     }
 }

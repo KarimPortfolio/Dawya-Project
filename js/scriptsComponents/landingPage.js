@@ -5,9 +5,11 @@ muteBtn.style.display = 'none';
 
 muteBtn.addEventListener('click' , () => {
     var soundBtn = document.querySelector('.sound_on_button');
+    var audio = document.querySelector('.audio');
     setTimeout( () => {
         soundBtn.style.display = 'flex';
         muteBtn.style.display = 'none';
+        audio.removeAttribute('muted');
     },3)
 })
 
@@ -80,6 +82,8 @@ $(document).ready( function () {
     $('.sound_on_button').click( () => {
         $('.sound_on_button').hide();
         $('.mute_button').show();
+        // $('.audio').attr('muted','');
+        $('.audio').attr('muted','');
     })
 
 } )

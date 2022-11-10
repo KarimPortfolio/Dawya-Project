@@ -1,1 +1,0 @@
-export var name2 ="asmae";

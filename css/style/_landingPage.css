@@ -8,6 +8,11 @@
     --main-color4:#E47B3A;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -111,7 +116,7 @@ nav div #middle__one{
 }
 
 .hamburger__menu:hover #middle__one{
-    width: 40px;
+    width: 30px;
 }
 
 .hamburger__animate__one{
@@ -138,11 +143,6 @@ nav div #middle__one{
     transition-timing-function: ease-in-out;
 }
 
-
-
-.closeButton{
-    display: none;
-}
 
 /* =========== Navbar style End ========= */
 
@@ -196,9 +196,9 @@ section .landingPage video{
     color: var(--main-color3) !important;
 }
 
-.landingPage .row p{
+/* .landingPage .row p{
     
-}
+} */
 
 .landingPage .row a{
     padding: 10px 60px;
@@ -226,6 +226,10 @@ section .landingPage video{
     position: absolute;
     top: 80%;
     left: 2%;
+}
+
+.audio{
+    visibility: hidden;
 }
 
 .controls div{
@@ -372,5 +376,70 @@ section .landingPage video{
     nav a img{
         width: 80px;
         height:50px;
+    }
+
+    .landingPage .row h5{
+        font-size: 35px;
+    }
+    .landingPage .row p{
+        font-size: 14px;
+    }
+
+    .landingPage .row a{
+        padding: 8px 40px;
+    }
+    .landingPage .row a i{
+        left: 30px;
+    }
+}
+
+@media (max-width:350px) {
+    .landingPage .row h5{
+        font-size: 30px;
+    }
+
+    .landingPage .row p{
+        font-size: 13px;
+    }
+    .landingPage .row a{
+        padding: 6px 30px;
+    }
+    .landingPage .row a i{
+        left: 20px;
+    }
+
+    .controls div{
+        width: 30px;
+        height: 30px;
+    }
+
+    nav a img{
+        width: 70px !important;
+        height: 40px !important;
+    }
+
+    #first__one,
+    #last__one,
+    #middle__one{
+        width: 30px;
+        margin: 3px;
+    }
+
+    .hamburger__animate__one{
+        top: 3px !important;
+        width: 30px !important;
+    }
+    
+    .hamburger__animate__two{
+        top: 9px !important;
+        width: 30px !important;
+    }
+    
+}
+
+@media (max-height:580px) {
+    .controls{
+        position: absolute;
+        top: 75% !important;
     }
 }
