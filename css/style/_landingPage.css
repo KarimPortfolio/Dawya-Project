@@ -251,7 +251,7 @@ section .landingPage video{
     background-color: rgba(238, 238, 238, 0.13);
 }
 
-.controls div i{
+.controls  div i{
     color: #FFF;
 }
 
