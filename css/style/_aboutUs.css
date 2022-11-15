@@ -1,0 +1,80 @@
+/* .aboutUs{
+    margin: 100px;
+    overflow: auto;
+}
+.titreAbout{
+    color: #E47B3A;
+    font-size: 70px;
+    position: relative;
+    left: 100px;
+    float: left;
+}
+.nous{
+    position: relative;
+    left: 180px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    
+}
+.photoAbout{
+    float: left;
+    padding: 100px;
+}
+.paraAbout{
+    /* float: right;
+    padding: 80px;
+    text-align: left;
+
+} */
+
+
+
+
+
+/* .aboutUs{
+    margin: 100px;
+    padding: 50px;
+} */
+.titleAbout{
+    color: #E47B3A;
+    margin-bottom: 40px;
+    text-align: right;
+    font-size: 60px;
+}
+.backgroundAbout{
+    background-color: #98be519f;
+    /* opacity: 0.87; */
+    padding: 50px;
+    /* padding-right: 0px;
+    padding-left: 90px; */
+}
+.paraAbout{
+    color: black;
+    font-weight: 500;
+}
+.hrAbout{
+    color: #98BE51;
+    margin-right: 200px; 
+}
+.dawyaSpan{
+    font-size: small;
+    font-weight: 500;
+}
+.nous{
+    vertical-align: bottom;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 20px;
+}
+.imageAbout{
+    height: 500px;
+    width: 100%; 
+    object-fit: cover;
+}
+.rowAbout{
+    /* background-color:red; */
+    height: 500px;
+}
+.rowAboutImg{
+    width: 100%;
+}
