@@ -72,7 +72,7 @@ nav.fill ul li a:after {
   right: 0;
   margin: auto;
   width: 0%;
-  content: '.';
+  content: '';
   color: transparent;
   background: var(--main-color4);
   height: 2px;
@@ -116,7 +116,7 @@ nav div #middle__one{
 }
 
 .hamburger__menu:hover #middle__one{
-    width: 30px;
+    width: 40px;
 }
 
 .hamburger__animate__one{
@@ -251,7 +251,7 @@ section .landingPage video{
     background-color: rgba(238, 238, 238, 0.13);
 }
 
-.controls div i{
+.controls  div i{
     color: #FFF;
 }
 

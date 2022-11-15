@@ -18,9 +18,8 @@ $(document).ready( function () {
     //handeling the map button
     $('.openMap').click( () => {
         $('body').toggleClass('body');
-        $('.intro').hide();
         $('.landingPage').hide();
-        
+        $('.intro').hide();
     })
 
     $('.closeIcone1').click( () => {

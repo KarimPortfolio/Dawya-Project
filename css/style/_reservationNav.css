@@ -1,0 +1,122 @@
+
+:root{
+    --main-color5:#DAE8C0;
+    --main-color6:#7caa29;
+    --main-color7:#E47B3A;
+    --transition:all 400ms ease-in-out;
+}
+
+.reser_navbar{
+    padding:8px 0px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.295);
+}
+
+.backhome a{
+    color: var(--main-color7);
+}
+
+.arrow_right{
+    transition: var(--transition);
+}
+
+.backhome a:hover{
+    text-decoration: none !important;
+    color: #c44e05;
+}
+
+.backhome a:hover .arrow_right{
+    position: relative;
+    left: 5px;
+}
+
+.welcome_title h1{
+    color:var(--main-color7);
+    font-size: 55px;
+    position: relative;
+}
+
+.welcome_title p{
+    color: #777;
+    font-size: 20px;
+}
+
+.leaf_image img{
+    width: 200px;
+    height: 200px;
+    position: absolute !important;
+    left: -90px;
+    top: 160px;
+}
+
+.reservation_part1{
+    border-radius: 12px;
+    background-color: var(--main-color5);
+}
+
+.reservation_part1 div span{
+    position: relative;
+}
+
+.reservation_part1 div p{
+    font-weight: 600;
+}
+
+.reservation_part1::after{
+    content: '';
+    width: 2px;
+    height: 111px;
+    background-color: var(--main-color6);
+    position: absolute;
+    top: 18.3%;
+    left: 12.5%;
+}
+.reservation_part1::before{
+    content: '';
+    width: 2px;
+    height: 110px;
+    background-color: var(--main-color6);
+    position: absolute;
+    top: 215px;
+    left: 12.5%;
+}
+
+.reservation_part1 div .span_active::after{
+    content: '';
+    width: 30px;
+    height:30px;
+    background-color: var(--main-color6);
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: -50px;
+}
+.reservation_part1 div .span_desactiver::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid var(--main-color6);
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: -50px;
+}
+
+.reservation_part2_a{
+    height: fit-content;
+    padding: 36px 20px;
+    border-radius: 12px;
+    background-color: var(--main-color5);
+}
+
+.reservation_part2_a form p{
+    color: var(--main-color6);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.reservation_part2_a form div button{
+    padding: 8px 60px;
+    background-color: var(--main-color6);
+    border: 2px solid transparent;
+}
