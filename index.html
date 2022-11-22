@@ -13,6 +13,8 @@
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>
     <script src="js/jQuery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -34,16 +36,16 @@
                <a href="#" class="logo pl-5 pt-1" data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="10"><img src="images/DawyaLogo.png" alt="" ></a>
        
                <div class="hamburger__menu">
-                     <span id="first__one"></span>
-                     <span id="middle__one"></span>
-                     <span id="last__one"></span>
+                    <span id="first__one"></span>
+                    <span id="middle__one"></span>
+                    <span id="last__one"></span>
                </div>
                  
                <div class="navbar-collaps mr-5" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-sine" data-aos-delay="10">
                     
                     <ul class="navbar-navs ml-auto my-0">
                         <li class="navbar-items">
-                            <a href="#" class="navLinks">Accueil</a>
+                            <a href="#home" class="navLinks">Accueil</a>
                         </li>
                         <li class="navbar-items">
                             <a href="#" class="navLinks">À propos de nous</a>
@@ -78,15 +80,16 @@
 
          <div class="landingPage">
              <div class="row w-100 justify-content-center pb-3">
-                  <h5 class="col-12 text-center text-white" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="500">Profiter De La Nature</h5>
+                  <h5 class="col-12 type element text-center text-white" data-aos="drift-up" data-aos-duration = "900" data-aos-delay= "100">Dawya Nature</h5>
                   <p class="col-sm-10 col-md-8 col-lg-4 text-center text-white mt-2 mb-3" data-aos="fade-up"  data-aos-duration="1000"  data-aos-delay="800">
                      des sommets imposants, de belles prairies, des arbres pleins de vie 
                      laissez-nous ressentir la beauté de la nature, respirer de l'air frais 
                      et ressentir l'étreinte de la lumière du soleil
                   </p>
+                  <!-- <p class="textintro" data-aos="drift-up" data-aos-duration = "900" data-aos-delay= "350">And I'm</p> <p class="type ml-3" data-aos="drift-up" data-aos-duration = "900" data-aos-delay= "400"></p> -->
              </div>
              <div class="row d-flex justify-content-center pb-5">
-                <a class="mb-5 btn btn-success" data-aos="fade-up"  data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="1000">Rejoinez-nous <i class="fas fa-long-arrow-right"></i></a>
+                <a class="mb-5 btn btn-success" href="reservation.html" data-aos="fade-up"  data-aos-duration="1000" data-aos-easing="ease-in-sine" data-aos-delay="1000">Rejoinez-nous <i class="fas fa-long-arrow-right"></i></a>
              </div>
              <div class="controls" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="2700">
                 <div class="sound_on_button"><i class="fas fa-volume-up"></i></div>
@@ -264,7 +267,7 @@
 
      </section>
 
-<!--================================= Landing Page End ===================================-->
+ <!--================================= Landing Page End ===================================-->
 
     <!-- Swiper -->
     <!-- <div class="swiper mySwiper" style="background-color: #98BE51;">
@@ -298,15 +301,18 @@
         </div>
       </div>
       <div class="swiper-pagination"></div>
+
     </div> -->
 
-    <!-- ============ JS Scripts =============-->
+  <!-- ============ JS Scripts =============-->
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS file -->
     <script type="module" src="./js/main.js"></script>
+    <!-- txtanime.js Library -->
+     <script type="module" src="./js/txtanime.js"></script>
 
     <!-- AOS Library JS CDN -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -314,7 +320,6 @@
     <script>
       AOS.init();
     </script>
-
     <!-- ============ JS Scripts END =============-->
   </body>
 </html>

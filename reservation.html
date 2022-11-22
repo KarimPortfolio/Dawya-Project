@@ -26,9 +26,9 @@
 
     <header>
         <nav class="reser_navbar">
-                <a href="index.html" class="pl-5"><img src="images/DawyaLogo.png" alt=""></a>
-                <div class="backhome pr-5">
-                    <a href="index.html">Reteur à L'accueil <i class="fa-solid fa-arrow-right-long arrow_right"></i></a>
+                <a href="index.html" class="pl-3 pl-md-5" data-aos="fade-right"  data-aos-duration="1700"  data-aos-delay="2700"><img src="images/DawyaLogo.png" alt=""></a>
+                <div class="backhome pr-3 pr-md-5">
+                    <a href="index.html" data-aos="fade-left"  data-aos-duration="1700"  data-aos-delay="2700">Reteur <span>à L'accueil</span> <i class="fa-solid fa-arrow-right-long arrow_right"></i></a>
                 </div>
         </nav>
     </header>
@@ -40,65 +40,141 @@
 
      <section>
 
-        <div class="container-fluid">
-             <div class="welcome_title">
-                  <h1 class="text-center mt-4">Welcome to Dawya Natures <i class="fas fa-leaf"></i></h1>
-                  <p class="text-center mt-2">Completer les 3 parties de réservation</p>
+        
+             <div class="welcome_title d-flex justify-content-center flex-column align-items-center">
+                  <h1 class="text-center" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="2900">Bienvenue à Dawya Natures <i class="fas fa-leaf"></i></h1>
+                  <p class="text-center mt-2" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="2950">Compléter les 3 parties de réservation</p>
              </div>
-             <div class="leaf_image">
-                 <img src="images/treeLeaf.png" alt="">
+
+             <div class="background_heading">
+
              </div>
-             <div class="row justify-content-center mt-5 pt-5">
-                <div class="reservation_part1 shadow d-flex justify-content-center flex-column align-items-center col-md-2 col-lg-3 mt-5">
+             
+             <div class="row w-100 justify-content-center mb-5 mt-sm-5 mt-lg-0 pb-5" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="3100">
+                <div class="reservation_part1 shadow d-flex justify-content-center flex-column align-items-center col-md-1 mt-5" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="3300">
                     <div class="m-5">
-                        <span class="span_active"></span>
-                        
+                        <span class="span1 span_active"></span>
                     </div>
                     <div class="m-5">
-                        <span class="span_desactiver"></span>
-                        
+                        <span class="span2 span_desactiver"></span>
                     </div>
                     <div class="m-5">
-                        <span class="span_desactiver"></span>
-                        
+                        <span class="span3 span_desactiver"></span>
                     </div>
                 </div>
-                <div class="reservation_part2_a shadow col-md-9 col-lg-7 ml-5 mt-5">
-                     <form action="" method="post">
-                        <p>Informations personnelles</p>
-                        <div class="row">
-                            <div class="col">
-                              <input type="text" class="form-control" placeholder="Nom">
-                            </div>
-                            <div class="col">
-                              <input type="text" class="form-control" placeholder="Prénom">
-                            </div>
-                        </div>
+                
+                  <form action="" method="post" class="reservation_part2_a shadow col-md-9 col-lg-7 m-0 ml-md-5 mt-md-5" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="3300" id="reservation_form">
                         
-                        
-                        <div class="row mt-5">
-                            <div class="col">
-                              <input type="number" class="form-control" placeholder="Age">
-                            </div>
-                            <div class="col">
-                              <input type="text" class="form-control" placeholder="Ville">
-                            </div>
-                        </div>
+                               <div class="reservation_first_part">
+                                   <p>Partie 1</p>
+                                   <div class="row">
+                                       <div class="col-12 col-sm-6">
+                                         <input type="text" class="form-control" name="nom" placeholder="Nom">
+                                       </div>
+                                       <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                                         <input type="text" class="form-control" name="prenom" placeholder="Prénom">
+                                       </div>
+                                   </div>
+                                   
+                                   
+                                   <div class="row mt-5">
+                                       <div class="col-12 col-sm-6">
+                                         <input type="number" class="form-control" name="age" placeholder="Age">
+                                       </div>
+                                       <div class="col-12 col-sm-6 mt-5 mt-sm-0">
+                                         <input type="text" class="form-control" name="ville" placeholder="Ville">
+                                       </div>
+                                   </div>
+                                         
+                                   <div class="mt-5">
+                                       <input type="text" class="form-control" name="pays" placeholder="Pays">
+                                   </div>
+                                   <div class="d-none d-md-flex mt-5 justify-content-center">
+                                       <button type="button" class="first_btn btn btn-success">Suivant</button>
+                                   </div>
+                               </div>
+       
+                               <!-- ========= Reservation part2 ========-->
+       
+                               <div class="reservation_second_part mt-5 mt-md-0">
+                                   <p>Partie 2</p>
+                                   <div class="">
+                                       <select name="les_personnes" id="" class="form-control">
+                                           <option value="Famille">Famille</option>
+                                           <option value="Amis">Amis</option>
+                                           <option value="Groupe Entreprise">Groupe Entreprise</option>
+                                       </select>
+                                   </div>
+                                   
+                 
+                                   <div class="row mt-5">
+                                       <div class="col">
+                                         <input type="number" class="form-control" name="nombre_des_places" placeholder="Nombre de personnes">
+                                       </div>
+                                   </div>
+                                         
+                                   <div class="mt-5">
+                                       <select name="offres" id="" class="form-control">
+                                            <option value="Ateliers">Ateliers</option>
+                                            <option value="Stages">Stages</option>
+                                       </select>
+                                   </div>
+                                   <div class="mt-5 d-none d-md-flex  justify-content-center">
+                                       <button type="button" class="second_btn btn btn-success">Suivant</button>
+                                   </div>
+                               </div>
+       
+                               <!--================ Reservation part3 ==================-->
                               
-                        <div class="mt-5">
-                            <input type="text" class="form-control" placeholder="Pays">
-                        </div>
-                        <div class="mt-5 d-flex justify-content-center">
-                            <button class="btn btn-success">Suivant</button>
-                        </div>
-                     </form>
-                </div>
+                               <div class="reservation_thired_part mt-5 mt-md-0">
+                                   <p>Partie 3</p>
+                                   <div>
+                                       <div >
+                                          <input type="date" name="date" class="form-control" >
+                                       </div>
+                                   </div>
+                                   
+                                   
+                                   <div class="mt-5">
+                                       <label class="d-block d-sm-inline-block" for="">Repas Jbala sur place déjeuner ou diner:</label>
+                                       <input type="checkbox" name="repas" value="oui" class="ml-4"><label class="ml-2" for="">Oui</label>
+                                       <input type="checkbox" name="repas" value="non" class="ml-4"><label class="ml-2" for="">Non</label>
+                                  </div>
+
+                                   <div class="mt-3">
+                                        <textarea name="souhaits_particuliers" class="form-control" rows="3" placeholder="Souhaits particuliers"></textarea>
+                                   </div>
+                                         
+                                   
+                                   <div class="mt-5 d-flex justify-content-center">
+                                       <button type="submit" class="btn btn-success">Réserver</button>
+                                   </div>
+                               </div>
+
+                    </form>
+                
              </div>
-        </div>
+
+             
+        
 
      </section>
 
     <!-- ================= Section End ==============-->
+
+
+    <!--============ JS scripts =============-->
+    <script src="./js/anime.min.js"></script>
+    <script type="module" src="./js/reservation.js"></script>
+
+    <!-- AOS Library JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS Library ON -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!--============ JS scripts End=============-->
     
 </body>
 </html>

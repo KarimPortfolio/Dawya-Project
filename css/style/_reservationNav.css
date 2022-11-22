@@ -6,6 +6,10 @@
     --transition:all 400ms ease-in-out;
 }
 
+header{
+    z-index: 300;
+}
+
 .reser_navbar{
     padding:8px 0px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.295);
@@ -29,15 +33,37 @@
     left: 5px;
 }
 
+.welcome_title{
+    background-image: url(../../images/nosOffres1.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    position: relative;
+}
+
+.welcome_title::after{
+    content: '';
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    opacity: 0.6;
+}
+
 .welcome_title h1{
     color:var(--main-color7);
     font-size: 55px;
     position: relative;
+    z-index: 200;
 }
 
 .welcome_title p{
-    color: #777;
+    color: #FFFF;
     font-size: 20px;
+    z-index: 200;
 }
 
 .leaf_image img{
@@ -51,6 +77,7 @@
 .reservation_part1{
     border-radius: 12px;
     background-color: var(--main-color5);
+    transition: var(--transition);
 }
 
 .reservation_part1 div span{
@@ -64,20 +91,22 @@
 .reservation_part1::after{
     content: '';
     width: 2px;
-    height: 111px;
+    height: 68px;
     background-color: var(--main-color6);
     position: absolute;
-    top: 18.3%;
-    left: 12.5%;
+    top: 33.5%;
+    left: 48.5%;
+    transition: var(--transition);
 }
 .reservation_part1::before{
     content: '';
     width: 2px;
-    height: 110px;
+    height: 70px;
     background-color: var(--main-color6);
     position: absolute;
-    top: 215px;
-    left: 12.5%;
+    top: 56%;
+    left: 48.5%;
+    transition: var(--transition);
 }
 
 .reservation_part1 div .span_active::after{
@@ -88,7 +117,7 @@
     border-radius: 50%;
     position: absolute;
     top: -3px;
-    left: -50px;
+    left: -16px;
 }
 .reservation_part1 div .span_desactiver::after{
     content: '';
@@ -99,7 +128,8 @@
     border-radius: 50%;
     position: absolute;
     top: -3px;
-    left: -50px;
+    left: -16px;
+    transition: var(--transition);
 }
 
 .reservation_part2_a{
@@ -109,14 +139,76 @@
     background-color: var(--main-color5);
 }
 
-.reservation_part2_a form p{
+.reservation_part2_a div p{
     color: var(--main-color6);
     font-size: 20px;
     font-weight: 600;
 }
 
-.reservation_part2_a form div button{
+.reservation_part2_a div button{
     padding: 8px 60px;
     background-color: var(--main-color6);
     border: 2px solid transparent;
+}
+
+.reservation_second_part,
+.reservation_thired_part
+{
+    display: none;
+}
+
+.background_heading{
+    position: absolute;
+    top: 66px;
+    width: 100%;
+    height:600px;
+    border-bottom-left-radius: 90%;
+    border-bottom-right-radius:90%;
+    background-color: #e2eecd67;
+    margin: 0;
+    z-index: -1;
+}
+
+.block{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 70px;
+    height:70px;
+    z-index: -1;
+}
+
+@media (max-width:992px) {
+    .reservation_part1::after{
+        left: 48%;
+    }
+    .reservation_part1::before{
+        left: 48%;
+    }
+}
+
+@media (max-width:776px) {
+    .reservation_part1{
+        display: none !important;
+    }
+
+    .reservation_part2_a{
+        border-radius: 0;
+    }
+
+    .reservation_second_part,
+    .reservation_thired_part{
+        display: block;
+    }
+
+    .welcome_title h1{
+        font-size: 26px;
+    }
+    .welcome_title p {
+        font-size: 14px;
+    }
+
+    .backhome a span{
+        display: none;
+    }
 }
