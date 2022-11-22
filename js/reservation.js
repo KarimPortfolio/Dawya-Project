@@ -37,25 +37,25 @@ button2.addEventListener( 'click' , () => {
     
 })
 
-window.addEventListener('scroll' , () => {
-    if (window.scrollY >= 150) {
-        var header = document.querySelector('header');
-        header.style.position = 'fixed';
-        header.style.width = '100%';
-        header.style.zIndex = '200';
-        header.style.top = '0px';
-        header.style.background = '#FFFF';
-    }
-    else{
-        var header = document.querySelector('header');
-        header.style.position = 'static';
-    }
-})
+// window.addEventListener('scroll' , () => {
+//     if (window.scrollY >= 150) {
+//         var header = document.querySelector('header');
+//         header.style.position = 'fixed';
+//         header.style.width = '100%';
+//         header.style.zIndex = '200';
+//         header.style.top = '0px';
+//         header.style.background = '#FFFF';
+//     }
+//     else{
+//         var header = document.querySelector('header');
+//         header.style.position = 'static';
+//     }
+// })
 
 
 const section = document.querySelector('section');
 
-for (var i = 0 ; i < 10 ; i++) {
+for (var i = 0 ; i < 15 ; i++) {
     let blocks = document.createElement('img');
     blocks.classList.add('block');
     blocks.setAttribute('src' , '../images/blob4.png');

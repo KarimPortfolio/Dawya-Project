@@ -7,7 +7,7 @@
 }
 
 header{
-    z-index: 300;
+    z-index: 200 !important;
 }
 
 .reser_navbar{
@@ -37,7 +37,7 @@ header{
     background-image: url(../../images/nosOffres1.jpeg);
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-position: center;
     position: relative;
 }
@@ -74,10 +74,13 @@ header{
     top: 160px;
 }
 
+
+
 .reservation_part1{
     border-radius: 12px;
     background-color: var(--main-color5);
     transition: var(--transition);
+    z-index: 200;
 }
 
 .reservation_part1 div span{
@@ -137,6 +140,7 @@ header{
     padding: 36px 20px;
     border-radius: 12px;
     background-color: var(--main-color5);
+    z-index: 200 !important;
 }
 
 .reservation_part2_a div p{
@@ -175,7 +179,7 @@ header{
     left: 50%;
     width: 70px;
     height:70px;
-    z-index: -1;
+    opacity: 0.6;
 }
 
 @media (max-width:992px) {
@@ -187,7 +191,7 @@ header{
     }
 }
 
-@media (max-width:776px) {
+@media (max-width:767px) {
     .reservation_part1{
         display: none !important;
     }
@@ -210,5 +214,9 @@ header{
 
     .backhome a span{
         display: none;
+    }
+
+    .welcome_title{
+        height: 200px;
     }
 }

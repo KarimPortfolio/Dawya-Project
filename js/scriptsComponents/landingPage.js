@@ -93,6 +93,7 @@ $(document).ready( function () {
 window.addEventListener('scroll' , () => {
  var header  = document.querySelector("header");
  var headerLogo = document.querySelector(".logo img");
+ var navLinks = document.querySelectorAll('nav ul li a');
  if (window.scrollY > 30) {
      header.style.backgroundColor = "#FFFF";
      header.style.boxShadow = "0px 0px 8px 0px rgba(0, 0, 0, 0.135)";
@@ -101,12 +102,18 @@ window.addEventListener('scroll' , () => {
      header.style.zIndex = "500";
      headerLogo.style.width = "60px";
      headerLogo.style.height = "60px";
+     navLinks.forEach( (link) => {
+         link.style.color = '#000';
+     })
  }else{
      header.style.backgroundColor = "transparent";
      header.style.boxShadow = "0px 0px 5px 0px transparent";
      header.style.position = "relative";
      headerLogo.style.width = "80px";
      headerLogo.style.height = "80px";
+     navLinks.forEach( (link) => {
+        link.style.color = '#FFFF';
+    })
  }
 })
 
