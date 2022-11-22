@@ -109,3 +109,49 @@ window.addEventListener('scroll' , () => {
      headerLogo.style.height = "80px";
  }
 })
+
+
+//Type writer script
+
+var app = document.querySelector('.type');
+
+var typewriter = new Typewriter(app, {
+  loop: true,
+  delay: 70,
+});
+
+typewriter
+  .pauseFor(400)
+  .typeString('<span style="color:#7caa29; font-family: "Work Sans",sans-serif;"><strong> Profiter La Nature </strong></span>')
+  .pauseFor(500)
+  .deleteChars(11)
+  .typeString('<span style="color:#7caa29; font-family: "Work Sans",sans-serif;"><strong> Des Activities à La Nature </strong> </span>')
+  .pauseFor(500)
+  .deleteChars(28)
+  .typeString('<span style ="color:#7caa29 ; font-family: "Work Sans" , sans-serif;"><strong>Des Ateliers à La Nature</strong></span>')
+  .pauseFor(600)
+  .start();
+
+//typre writer script
+
+
+// let demo  = new TxtAnime();
+// txt.overlay('.element',{
+//     // overlay-1 - overlay-3
+//     effect : 'overlay-1',
+    
+//     // start time in seconds
+//     delayStart: 0,
+    
+//     // repeat the animation or not
+//     loop : true,
+    
+//     // replay the effect after... in seconds
+//     loopTime : 5,
+//     // background color
+//     overlayColor: '#03a9f4',
+//     // text color
+//     textColor : '#161414',
+//     // waiting time in seconds
+//     outTime: 3,
+//   });
