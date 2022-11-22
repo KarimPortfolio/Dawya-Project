@@ -1,0 +1,24 @@
+#nosoffres{
+    background-color:rgb(218,232,192);
+}
+#titre{
+    color:rgb(228,123,58);
+}
+.reserverBtn{
+    background-color:rgb(152,190,81);
+    
+}
+.reserverBtn:hover{
+    background-color:rgb(172,202,114);
+}
+.titre_texte{
+    color:rgb(152,190,81) ;
+}
+@media (max-width:992px) {
+   
+      
+ 
+
+
+   
+    }
