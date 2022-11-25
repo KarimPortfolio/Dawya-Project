@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Arima:wght@300;400;700&family=Bebas+Neue&family=Cinzel:wght@400;500&family=Cookie&family=Dancing+Script:wght@400;500&family=Girassol&family=Josefin+Sans:wght@400;500;600;700&family=Libre+Bodoni&family=Merienda:wght@500;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,600&family=Mouse+Memoirs&family=Nunito:wght@300;400;500;600;700;800;900&family=Pacifico&family=Philosopher:wght@400;700&family=Playball&family=Playfair+Display:wght@400;500;600;700&family=Raleway:ital@0;1&family=Roboto:wght@300;400;500;700&family=Satisfy&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,900;1,300&family=Yeseva+One&family=Yusei+Magic&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    --main-color5:#c3f3c3;
+}
+
+.row{
+    width: 100% !important;
+}
+
+.textPrincipalParagraphe{
+    line-height: 35px !important;
+}
+
+.text_principale img{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.about_us_title{
+    color: var(--main-color4) !important;
+    font-size: 55px;
+    width: 100%;
+    position: relative;
+}
+.about_us_title::after{
+    content: '';
+    width: 115px;
+    height: 4px;
+    background-color: var(--main-color4);
+    position: absolute;
+    top: 140px;
+    left: 50px;
+}
+
+.about_us_title span{
+    display: block;
+}
+
+.about_us_text{
+    background-color: var(--main-color5);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media (max-width:992px) {
+    .text_principale img{
+        border-radius: 20px;
+    }
+
+    .about_us_title span{
+        display: inline-block;
+    }
+
+    .about_us_title::after{
+        display: none;
+    }
+
+    .about_us_text{
+        border-radius: 0;
+    }
+}
+
+@media (max-width:450px) {
+    .about_us_title{
+        font-size: 35px !important;
+    }
+}

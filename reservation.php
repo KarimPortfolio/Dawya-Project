@@ -54,7 +54,11 @@
              </div> -->
              <div>
                   <?php
-                       echo $_SESSION['checkreservation'];
+                       if (!empty($_SESSION['checkreservation'])) {
+                           echo $_SESSION['checkreservation'];
+                       }else{
+                           echo '';
+                       }
                   ?>
              </div>
 

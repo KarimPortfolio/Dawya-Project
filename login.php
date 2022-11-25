@@ -1,4 +1,3 @@
-
 <!-- 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,30 +48,31 @@
 
 <?php
 
-     include_once 'connect.php';
+include_once 'connect.php';
 
-     function loginCheck () {
-          $qu = Database::getAdminLogin("SELECT * FROM admin"); 
-          return $qu;
-     }
-     
-     if (isset($_POST['submit'])) {
-        $email = $_POST['email'];
-        $password = $_POST['password'];
-        
-        if (!empty($email) && !empty($password)) {
-            $data = loginCheck()->fetch();   
-            $adminEmail = $data['email'];
-            $adminPassword = $data['passwords'];
-            if ($email == $adminEmail && $password == $adminPassword) {
-                 echo 'login succefly';
-            }else{
-                echo 'Email or Password not valid';
-            }
-        }else{
-            echo "Input fileds can't be empty";
+function loginCheck()
+{
+    $qu = Database::getAdminLogin("SELECT * FROM admin");
+    return $qu;
+}
+
+if (isset($_POST['submit'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    if (!empty($email) && !empty($password)) {
+        $data = loginCheck()->fetch();
+        $adminEmail = $data['email'];
+        $adminPassword = $data['passwords'];
+        if ($email == $adminEmail && $password == $adminPassword) {
+            echo 'login succefly';
+        } else {
+            echo 'Email or Password not valid';
         }
-     }
+    } else {
+        echo "Input fileds can't be empty";
+    }
+}
 
 
 ?>
