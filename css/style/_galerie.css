@@ -1,0 +1,27 @@
+
+:root{
+    --main-color:#cae3ca8f;
+    --main-color2:#8dc88d;
+    --main-color3:#28a745;
+    --main-color4:#E47B3A;
+}
+
+.galerie .galerie_title h5{
+    font-size: 45px;
+    color: var(--main-color4);
+}
+
+.filters .active{
+    font-weight: 600;
+    position: relative;
+}
+
+.filters .active::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color4);
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
