@@ -129,13 +129,13 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .pauseFor(400)
-  .typeString('<span style="color:#7caa29; font-family: "Work Sans",sans-serif;"><strong> Profiter La Nature </strong></span>')
+  .typeString('<span style="color:#28a745; font-family: "Work Sans",sans-serif;"><strong> Profiter La Nature </strong></span>')
   .pauseFor(500)
   .deleteChars(11)
-  .typeString('<span style="color:#7caa29; font-family: "Work Sans",sans-serif;"><strong> Des Activities à La Nature </strong> </span>')
+  .typeString('<span style="color:#28a745; font-family: "Work Sans",sans-serif;"><strong> Des Activities à La Nature </strong> </span>')
   .pauseFor(500)
   .deleteChars(28)
-  .typeString('<span style ="color:#7caa29 ; font-family: "Work Sans" , sans-serif;"><strong>Des Ateliers à La Nature</strong></span>')
+  .typeString('<span style ="color:#28a745 ; font-family: "Work Sans" , sans-serif;"><strong>Des Ateliers à La Nature</strong></span>')
   .pauseFor(600)
   .start();
 

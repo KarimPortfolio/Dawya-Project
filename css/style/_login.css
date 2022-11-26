@@ -1,7 +1,24 @@
 .login_part2{
-    background-color:  #DAE8C0;
+    background-color:  #8dc88d;
 }
-.divimg{
-    
-    
+.btnnlog button{
+    background-color: #28a745;
+    color: #FFFF;
+}
+.titrelog h2{
+    color: #28a745;
+
+}
+
+.titree h2{
+    font-size: 50px;
+}
+
+.passwordVisibility i{
+    position: relative;
+    top: -43px;
+}
+
+.hideIcon{
+    display: none;
 }

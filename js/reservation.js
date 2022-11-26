@@ -95,18 +95,18 @@ setInterval( () => {
 
 // API (send form data to owner email;
 
-let form = document.querySelector('#reservation_form');
-form.addEventListener('submit' , (e) => {
-    e.preventDefault();
-    const newResrvation = new FormData(form);
-    const payload = new URLSearchParams(newResrvation)
-    fetch('http://localhost/dawyawebsite/Dawya-project/reservationmail.php' , {
-        method:'POST',
-        body:payload,
-    })
-      .then(resp => resp.text())
-      .then(data => console.log(data))
-      .catch(err => {
-            alert("Data doesn't send");
-      });
-})
+// let form = document.querySelector('#reservation_form');
+// form.addEventListener('submit' , (e) => {
+//     e.preventDefault();
+//     const newResrvation = new FormData(form);
+//     const payload = new URLSearchParams(newResrvation)
+//     fetch('http://localhost/dawyawebsite/Dawya-project/reservationmail.php' , {
+//         method:'POST',
+//         body:payload,
+//     })
+//       .then(resp => resp.text())
+//       .then(data => console.log(data))
+//       .catch(err => {
+//             alert("Data doesn't send");
+//       });
+// })
