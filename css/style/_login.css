@@ -16,9 +16,14 @@
 
 .passwordVisibility i{
     position: relative;
-    top: -43px;
+    top: -66px;
 }
-
 .hideIcon{
     display: none;
+}
+
+#emailHelp,
+#passwordHelp{
+    visibility: hidden;
+    transition: var(--transition);
 }

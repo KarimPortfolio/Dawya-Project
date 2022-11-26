@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,24 +38,30 @@
         </div>
         <div class="col-md-6 titrelog d-flex justify-content-center align-items-center flex-column pb-5">
             <h2 class="text-center mt-5 mb-5 ">Se connecter</h2>
-            <form action="login.php" method="POST" class="w-75">
-                <div class="form-group mb-4">
-                  <input type="email" class="form-control" id="emaill" placeholder="E-mail" name="email">
+            <form action="login.php" method="post" class="w-75">
+                <div class="form-group mb-3">
+                  <input type="email" class="form-control" id="emaill" placeholder="E-mail" name="email" onkeydown="checkEmail()">
+                  <small id="emailHelp" class="form-text text-muted">Email can't be empty and can't be a number</small>
                 </div>
                 <div class="form-group ">
-                  <input type="password" class="form-control" id="Mpasse" placeholder="Mot de passe" name="password"/>
+                  <input type="password" class="form-control" id="Mpasse" placeholder="Mot de passe" name="password" onfocus="checkEmail()" onkeydown="checkPassword()" />
+                  <small id="passwordHelp" class="form-text text-muted">Password can't be empty and can't be a number</small>
                 </div>
                 <div class="passwordVisibility d-flex justify-content-end pr-3">
-                    <i class="fas fa-eye showIcon"></i>
-                    <i class="fas fa-eye-slash hideIcon"></i>
+                    <i class="fas fa-eye showIcon" onclick="showPassword(this)" ></i>
+                    <i class="fas fa-eye-slash hideIcon" onclick="hidePassword(this)"></i>
                 </div>
                 <div>
                       <?php
-                           if ($_POST[])
+                        //    if (!empty(checkEmailandPassword())) {
+                        //        checkEmailandPassword();
+                        //    }else{
+                        //        echo '';
+                        //    }
                       ?>
                 </div>
                 <div class="btnnlog">
-                    <button type="submit" class=" form-control form-control-lg shadow-sm " style="height: 50px;">Connexion</button>
+                    <button type="submit" name="submit" class=" form-control form-control-lg shadow-sm " >Connexion</button>
                 </div>
               </form>
         </div>
@@ -74,23 +84,29 @@ function loginCheck()
     return $qu;
 }
 
-if (isset($_POST['submit'])) {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    if (!empty($email) && !empty($password)) {
-        $data = loginCheck()->fetch();
-        $adminEmail = $data['email'];
-        $adminPassword = $data['passwords'];
-        if ($email == $adminEmail && $password == $adminPassword) {
-            echo 'login succefly';
+function checkEmailandPassword () {
+    if (isset($_POST['submit'])) {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+    
+        if (!empty($email) && !empty($password)) {
+            $data = loginCheck()->fetch();
+            $adminEmail = $data['email'];
+            $adminPassword = $data['passwords'];
+            if ($email == $adminEmail && $password == $adminPassword) {
+                echo 'Connecter avec success';
+            } else {
+                echo 'Email ou mot de passe invalide';
+            }
         } else {
-            echo 'Email or Password not valid';
+            echo " Remplit tous les champs ";
         }
-    } else {
-        echo "Input fileds can't be empty";
+    }else{
+        echo 'error';
     }
 }
+
+
 
 
 ?>
