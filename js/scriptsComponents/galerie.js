@@ -9,10 +9,44 @@ allFilters.forEach( (elt) => {
                 ele.classList.remove('active')
             });
             elt.classList.add('active');
+            var filtersText = elt.innerHTML;
+            switch (filtersText) {
+                case 'TOUS':
+                    var boujmilImgs = document.querySelectorAll('.boujmilView');
+                    boujmilImgs.forEach( (img) => {
+                        img.style.display = 'block';
+                    })
+                    var atelierImgs = document.querySelectorAll('.atelier');
+                    atelierImgs.forEach( (img) => {
+                        img.style.display = 'block';
+                    })
+                    break;
+                case 'BOUJMIL VIEW':
+                    var boujmilImgs = document.querySelectorAll('.boujmilView');
+                    boujmilImgs.forEach( (img) => {
+                        img.style.display = 'block';
+                    })
+                    var atelierImgs = document.querySelectorAll('.atelier');
+                    atelierImgs.forEach( (img) => {
+                        img.style.display = 'none';
+                    })
+                    break;
+                case 'ATELIERS':
+                    console.log(filtersText);
+                    var boujmilImgs = document.querySelectorAll('.boujmilView');
+                    boujmilImgs.forEach( (img) => {
+                        img.style.display = 'none';
+                    })
+                    var atelierImgs = document.querySelectorAll('.atelier');
+                    atelierImgs.forEach( (img) => {
+                        img.style.display = 'block';
+                    })
+                    break;
+            
+            }
         },20);
     });
 });
 
-// All images
 
-var images = ['']
+
