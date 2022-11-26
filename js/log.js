@@ -32,7 +32,7 @@ function checkPassword () {
 
 function showPassword (element) {
     var passwordInput = document.getElementsByName('password')[0];
-    var hidePassword = document.querySelector('.hideIcon');
+    var hidePassword = document.querySelector('.showIcon');
     passwordInput.removeAttribute('type');
     passwordInput.setAttribute('type' , 'text');
     element.style.display = 'none';
@@ -41,7 +41,7 @@ function showPassword (element) {
 
 function hidePassword (element) {
     var passwordInput = document.getElementsByName('password')[0];
-    var showPassword = document.querySelector('.showIcon');
+    var showPassword = document.querySelector('.hideIcon');
     passwordInput.removeAttribute('type');
     passwordInput.setAttribute('type' , 'password');
     element.style.display = 'none';
