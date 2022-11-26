@@ -4,6 +4,7 @@
     --main-color2:#8dc88d;
     --main-color3:#28a745;
     --main-color4:#E47B3A;
+    --transition:all 400ms ease-in-out;
 }
 
 .galerie .galerie_title h5{
@@ -16,6 +17,11 @@
     position: relative;
 }
 
+.filters p{
+    cursor: pointer;
+    transition: var(--transition);
+}
+
 .filters .active::after{
     content: '';
     width: 100%;
@@ -24,4 +30,5 @@
     position: absolute;
     top: 30px;
     left: 0;
+    transition:var(--transition);
 }
