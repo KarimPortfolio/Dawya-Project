@@ -2,15 +2,17 @@
 let mybutton = document.getElementById("btn-back-to-top");
 
 window.onscroll = function () {
-  scrollFunction();
+     if (window.innerWidth > 554) {
+         scrollFunction();
+     }
 };
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
+    document.body.scrollTop > 30 ||
+    document.documentElement.scrollTop > 30
   ) {
-    mybutton.style.display = "block";
+    mybutton.style.display = "flex";
   } else {
     mybutton.style.display = "none";
   }

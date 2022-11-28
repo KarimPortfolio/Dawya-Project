@@ -1,24 +1,58 @@
-#nosoffres{
-    background-color:#8dc88d;
+/* ============= ========== */
+.offres_title h5{ 
+    color: var(--main-color4);
+    font-size: 55px;
 }
-#titre{
-    color:rgb(228,123,58);
+
+.first_part{
+    background: linear-gradient( 45deg ,#bbf6c8,#e5fae9);
+    position: relative;
+    top: 50px;
 }
-.reserverBtn{
-    background-color:#28a745;
-    
+
+.carousel-indicators{
+    position: relative !important;
+    top: 40px;
 }
-.reserverBtn:hover{
-    background-color:#28a745;
+
+.offres_slide_title{
+   color: var(--main-color3) !important;
+   font-size: 20px;
 }
-.titre_texte{
-    color:#28a745 ;
+
+.carousel-indicators li{
+    border: 1px solid #02a328;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
 }
+
+.carousel-indicators .active{
+    border: 1.5px solid #02a328;
+    width: 10px;
+    height: 10px;
+}
+
+#offres .first_part a{
+    background-color: transparent !important;
+    color: var(--main-color3);
+    border: 1.5px solid;
+    border-radius: 0;
+    width: 100%;
+    padding: 9px 0px;
+    transition: var(--transition);
+}
+
+#offres .first_part a:hover{
+    background-color: var(--main-color3) !important;
+    border: 2px solod var(--main-color3);
+    color: #FFFF;
+}
+
 @media (max-width:992px) {
-   
-      
- 
-
-
-   
+    .carousel-indicators{
+        top: 0;
+        margin-top: 20px !important;
     }
+}
