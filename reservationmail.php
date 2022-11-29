@@ -44,7 +44,7 @@ function sendMAIL()
            </div>';
 
         if (empty($nom) || empty($prenom) || empty($age) || empty($email) || empty($pays) || empty($ville) || empty($les_personnes) || empty($offres) || empty($date) || empty($repas_jbala) || empty($souhaits_particuliers) || empty($subject)) {
-            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+            $_SESSION['checkreservation'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>Veuillez remplir tous les champs de saisie</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
@@ -52,7 +52,7 @@ function sendMAIL()
              </div>';
         } else {
             if (!is_nan($nom) || !is_nan($prenom) || !is_nan($email) || !is_nan($pays) || !is_nan($ville)) {
-                echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                $_SESSION['checkreservation'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
                    <strong>Vos informations personnelles ne peuvent pas être un nombre seul âge peut</strong>
                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                      <span aria-hidden="true">&times;</span>
@@ -68,11 +68,11 @@ function sendMAIL()
                     'X-Mailer' => 'PHP/' . phpversion()
                 );
                 mail($to, $subject, $message, $headers);
-                echo $successMsg;
+                $_SESSION['checkreservation'] = $successMsg;
             }
         }
     } else {
-        echo 'not submited';
+        $_SESSION['checkreservation'] = 'not submited';
     }
 }
 

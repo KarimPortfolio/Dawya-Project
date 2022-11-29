@@ -1,6 +1,6 @@
 .Footer{
-    background-color: rgb(87,110,43);
-    color: rgb(152,190,81);
+    background-color: #015e16;
+    color: #88f99d;
     max-width: 1800px;
 	margin:auto; 
 } 
@@ -41,9 +41,13 @@ ul li i{
 #btn-back-to-top {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 30px;
     display: none;
-    border-radius: 80px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 

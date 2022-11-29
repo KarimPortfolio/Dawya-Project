@@ -21,7 +21,7 @@ allFilters.forEach( (elt) => {
                         img.style.display = 'block';
                     })
                     break;
-                case 'BOUJMIL VIEW':
+                case 'BOUJMIL':
                     var boujmilImgs = document.querySelectorAll('.boujmilView');
                     boujmilImgs.forEach( (img) => {
                         img.style.display = 'block';

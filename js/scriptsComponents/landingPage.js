@@ -29,6 +29,7 @@ function handleHamburgerMenuClick () {
       setTimeout( () => {
          body.classList.add('shadow2');
       },50 )
+      
   }
   else{
       var navbar = document.querySelector(".navbar-collaps-clicked");
@@ -47,15 +48,16 @@ hamburger__menu.addEventListener('click' , () => {
 //jQuery Scripts
 $(document).ready( function () {
     $(".hamburger__menu").click(
-         function () {
+          ()  => {
              $("#first__one").toggleClass('hamburger__animate__one');
              $("#last__one").toggleClass('hamburger__animate__two');
              $("#middle__one").toggleClass('hamburger__animate__three');
              $("body").toggleClass('shadow2');
+             
          }
     );
     $(".hamburger__menu2").click(
-         function () {
+         () => {
              $("body").toggleClass('shadow2');
          }
     );
@@ -120,24 +122,24 @@ window.addEventListener('scroll' , () => {
 
 //Type writer script
 
-var app = document.querySelector('.type');
+// var app = document.querySelector('.type');
 
-var typewriter = new Typewriter(app, {
-  loop: true,
-  delay: 70,
-});
+// var typewriter = new Typewriter(app, {
+//   loop: true,
+//   delay: 70,
+// });
 
-typewriter
-  .pauseFor(400)
-  .typeString('<span style="color:#28a745; font-family: "Work Sans",sans-serif;"><strong> Profiter La Nature </strong></span>')
-  .pauseFor(500)
-  .deleteChars(11)
-  .typeString('<span style="color:#28a745; font-family: "Work Sans",sans-serif;"><strong> Des Activities à La Nature </strong> </span>')
-  .pauseFor(500)
-  .deleteChars(28)
-  .typeString('<span style ="color:#28a745 ; font-family: "Work Sans" , sans-serif;"><strong>Des Ateliers à La Nature</strong></span>')
-  .pauseFor(600)
-  .start();
+// typewriter
+//   .pauseFor(400)
+//   .typeString('<span style="color:#28a745; font-family: "Work Sans",sans-serif;"><strong> Profiter La Nature </strong></span>')
+//   .pauseFor(500)
+//   .deleteChars(11)
+//   .typeString('<span style="color:#28a745; font-family: "Work Sans",sans-serif;"><strong> Des Activities à La Nature </strong> </span>')
+//   .pauseFor(500)
+//   .deleteChars(28)
+//   .typeString('<span style ="color:#28a745 ; font-family: "Work Sans" , sans-serif;"><strong>Des Ateliers à La Nature</strong></span>')
+//   .pauseFor(600)
+//   .start();
 
 //typre writer script
 
@@ -162,3 +164,5 @@ typewriter
 //     // waiting time in seconds
 //     outTime: 3,
 //   });
+
+

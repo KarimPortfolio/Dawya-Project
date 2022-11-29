@@ -30,6 +30,7 @@
 
 .carousel-indicators .active{
     border: 1.5px solid #02a328;
+    background-color: #02a328;
     width: 10px;
     height: 10px;
 }

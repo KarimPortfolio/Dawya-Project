@@ -29,9 +29,9 @@
 
     <header>
         <nav class="reser_navbar">
-                <a href="index.html" class="pl-3 pl-md-5" data-aos="fade-right"  data-aos-duration="1700"  data-aos-delay="2700"><img src="images/DawyaLogo.png" alt=""></a>
+                <a href="index.html" class="pl-3 pl-md-5" data-aos="fade-right"  data-aos-duration="700"  data-aos-delay="400"><img src="images/DawyaLogo.png" alt=""></a>
                 <div class="backhome pr-3 pr-md-5">
-                    <a href="index.html" data-aos="fade-left"  data-aos-duration="1700"  data-aos-delay="2700">Reteur <span>à L'accueil</span> <i class="fa-solid fa-arrow-right-long arrow_right"></i></a>
+                    <a href="index.php" data-aos="fade-left"  data-aos-duration="700"  data-aos-delay="400">Reteur <span>à L'accueil</span> <i class="fa-solid fa-arrow-right-long arrow_right"></i></a>
                 </div>
         </nav>
     </header>
@@ -45,8 +45,8 @@
 
         
              <div class="welcome_title d-flex justify-content-center flex-column align-items-center">
-                  <h1 class="text-center" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="2900">Bienvenue à Dawya Natures <i class="fas fa-leaf"></i></h1>
-                  <p class="text-center mt-2" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="2950">Compléter les 3 parties de réservation</p>
+                  <h1 class="text-center" data-aos="fade-up"  data-aos-duration="900"  data-aos-delay="900">Bienvenue à Dawya Natures <i class="fas fa-leaf"></i></h1>
+                  <p class="text-center mt-2" data-aos="fade-up"  data-aos-duration="1000"  data-aos-delay="1200">Compléter les 3 parties de réservation</p>
              </div>
 
              <!-- <div class="background_heading">
@@ -62,8 +62,8 @@
                   ?>
              </div>
 
-             <div class="row w-100 justify-content-center mx-0 mb-5 mt-sm-5 mt-lg-0 pb-5" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="3100">
-                <div class="reservation_part1 shadow d-flex justify-content-center flex-column align-items-center col-md-1 mt-5" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="3300">
+             <div class="row w-100 justify-content-center mx-0 mb-5 mt-sm-5 mt-lg-0 pb-5" data-aos="fade-up"  data-aos-duration="2700"  data-aos-delay="1300">
+                <div class="reservation_part1 shadow d-flex justify-content-center flex-column align-items-center col-md-1 mt-5" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="1300">
                     <div class="m-5">
                         <span class="span1 span_active"></span>
                     </div>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 
-                  <form action="reservationmail.php" method="post" class="reservation_part2_a shadow col-md-9 col-lg-7 m-0 ml-md-5 mt-md-5" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="3300" id="reservation_form">
+                  <form action="reservationmail.php" method="post" class="reservation_part2_a shadow col-md-9 col-lg-7 m-0 ml-md-5 mt-md-5" data-aos="fade-up"  data-aos-duration="1700"  data-aos-delay="1300" id="reservation_form">
                         
                                <div class="reservation_first_part">
                                    <p>Partie 1</p>

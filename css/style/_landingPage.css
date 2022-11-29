@@ -192,8 +192,11 @@ section .landingPage video{
 }
 
 .landingPage .row h5{
-    font-size: 50px;
-    color: var(--main-color3) !important;
+    font-size: 60px;
+    background: -webkit-linear-gradient(315deg,#0ea531 35%,#d6fadb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* .landingPage .row p{
@@ -255,6 +258,9 @@ section .landingPage video{
     color: #FFF;
 }
 
+.Typewriter__cursor{
+    font-weight: 200;
+}
 
 
 /* ========== Section intro style End =========== */
@@ -292,7 +298,7 @@ section .landingPage video{
         position: absolute;
         top: 0;
         left: 0;
-        width: 70%;
+        width: 45%;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -301,7 +307,7 @@ section .landingPage video{
         align-items: center;
         margin: 0;
         transition: all 400ms ease-in-out;
-        left:30%;
+        left:55%;
     }
 
     nav .navbar-navs{
@@ -323,7 +329,7 @@ section .landingPage video{
         transition: all 300ms ease;
     }
 
-    nav.stroke ul li a:after,
+    /* nav.stroke ul li a:after,
     nav.fill ul li a:after {
       position: absolute;
       top: 25px;
@@ -340,19 +346,21 @@ section .landingPage video{
 
    nav.stroke ul li a:hover:after {
       width: 100%;
-  }
+  } */
+
+  
 
   .shadow2::after{
     content: '';
     background-color: #000f;
     position: absolute;
-    width: 30%;
+    width: 55%;
     height: 20000px !important;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.55;
+    opacity: 0.35;
     z-index: 800;
   }
 
@@ -360,7 +368,30 @@ section .landingPage video{
     overflow-y: hidden;
     overflow-x: hidden;
   }
+
+  .socialMediaLinks li a{
+      color: #000 !important;
+      position: relative;
+      left: -10px;
+  }
+
+  .socialMediaLinks li a i{
+      color: #000;
+      font-size: 20px;
+  }
+
   
+  
+}
+
+@media(max-width:776px) {
+    nav .navbar-collaps-clicked{
+        width: 60%;
+        left:40%;
+    }
+    .shadow2::after{
+        width: 40%;
+    }
 }
 
 
@@ -390,6 +421,13 @@ section .landingPage video{
     }
     .landingPage .row a i{
         left: 30px;
+    }
+    nav .navbar-collaps-clicked{
+        width: 80%;
+        left:20%;
+    }
+    .shadow2::after{
+        width: 20%;
     }
 }
 
@@ -437,6 +475,28 @@ section .landingPage video{
     .hamburger__animate__two{
         top: 9px !important;
         width: 30px !important;
+    }
+
+    nav .navbar-collaps-clicked{
+        width:100%;
+        left:0px;
+    }
+    .shadow2::after{
+        width:0%;
+    }
+    nav ul{
+        width: 100%;
+    }
+    nav ul li {
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0 !important;
+    }
+    nav ul li a{
+        
+        text-align: center !important;
     }
     
 }
