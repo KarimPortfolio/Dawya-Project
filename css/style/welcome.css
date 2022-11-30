@@ -51,7 +51,7 @@ img{
 main {
     margin-left: 380px;
     width: 1220px;
-    height: 733px;
+    height: 100vh;
     background-image: url("../../images/pexels-pixabay-459203.jpg");
     background-position: center;
     background-size: cover;

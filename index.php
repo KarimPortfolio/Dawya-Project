@@ -59,7 +59,7 @@
                             <a href="#offres" class="navLinks">Nos offres</a>
                         </li>
                         <li class="navbar-items">
-                            <a href="reservation.php" class="navLinks">Réservation</a>
+                            <a href="reservation.html" class="navLinks">Réservation</a>
                         </li>
                     </ul>
 

@@ -53,45 +53,45 @@ button2.addEventListener( 'click' , () => {
 // })
 
 
-// const section = document.querySelector('section');
+const section = document.querySelector('section');
 
-// for (var i = 0 ; i < 15 ; i++) {
-//     let blocks = document.createElement('img');
-//     blocks.classList.add('block');
-//     blocks.setAttribute('src' , '../images/blob4.png');
-//     section.appendChild(blocks);
-// }
+for (var i = 0 ; i < 15 ; i++) {
+    let blocks = document.createElement('img');
+    blocks.classList.add('block');
+    blocks.setAttribute('src' , '../images/blob4.png');
+    section.appendChild(blocks);
+}
 
-// function animateBlocks () {
-//     var html = document.querySelector('html');
-//     html.style.overflowX = 'hidden'
-//     anime({
-//         targets: '.block',
-//         translateX: function () {
-//             return anime.random(-700,700)
-//         },
-//         translateY: function () {
-//             return anime.random(-500,500)
-//         },
-//         scale: function () {
-//             return anime.random(1,5)
-//         },
-//         easing:'linear',
-//         duration:3000,
-//         delay:anime.stagger(10),
-//         complete:animateBlocks,
-//     })
-// }
+function animateBlocks () {
+    var html = document.querySelector('html');
+    html.style.overflowX = 'hidden'
+    anime({
+        targets: '.block',
+        translateX: function () {
+            return anime.random(-700,700)
+        },
+        translateY: function () {
+            return anime.random(-500,500)
+        },
+        scale: function () {
+            return anime.random(1,5)
+        },
+        easing:'linear',
+        duration:3000,
+        delay:anime.stagger(10),
+        complete:animateBlocks,
+    })
+}
 
-// animateBlocks();
+animateBlocks();
 
 
-// setInterval( () => {
-//     var allBlocks = document.querySelectorAll('.block');
-//     allBlocks.forEach( (block) => {
-//          block.style.display = 'none';
-//     })
-// },3800);
+setInterval( () => {
+    var allBlocks = document.querySelectorAll('.block');
+    allBlocks.forEach( (block) => {
+         block.style.display = 'none';
+    })
+},3800);
 
 // API (send form data to owner email;
 
