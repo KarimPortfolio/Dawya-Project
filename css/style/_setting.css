@@ -1,0 +1,226 @@
+.menu{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #015e16;
+    overflow-x: hidden;
+    padding-top: 90px;
+}
+
+#h1{
+    padding: 0 30px 20px 45px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    color: #88f99d;
+}
+
+.menu a{
+    padding: 6px 6px 10px 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Poppins', sans-serif;
+    color: rgb(246, 246, 246);
+    display: block;
+    transition-timing-function: ease-in;
+
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    padding: 5px 8px 8px 0;
+}
+
+#logout{
+    width: 35px;
+}
+
+.menu a:hover{
+    color: rgb(214, 214, 214);
+
+    margin-left: 14px;
+}
+
+.titreSett {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    white-space: nowrap;
+    color: #e55f11;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+label {
+    color: #e55f11;
+    font-size: 20px;
+}
+
+.formPad {
+    padding-top: 50px;
+}
+
+.btn {
+    height: 100%;
+    white-space: nowrap;
+    background-color: #0e8240f9;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 10%;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.hr {
+    margin-left: 30px;
+    width: 40%;
+}
+
+.titreMenu {
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.input {
+    visibility: hidden;
+}
+
+.formControl {
+    width: 400px;
+    margin-left: 400px;
+    visibility: visible;
+}
+
+
+
+
+@media screen and (max-width:576px) {
+    .sideMenu {
+        margin: 0;
+        padding: 0;
+        color: #cdcdcd;
+        font-family: "Avenir Next", "Avenir", sans-serif;
+        background: none;
+        position: relative;
+    }
+
+    .sideMenu {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 30px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+        height: 100%;
+    }
+
+    .sideMenu a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+
+    .sideMenu input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+        visibility: visible;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #0d0c0c;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+
+    .sideMenu span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    .sideMenu span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    .sideMenu input:checked~span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    .sideMenu input:checked~span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    .sideMenu input:checked~span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    .menu {
+        position: absolute;
+        width: 600px;
+        height: 1000px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: #015e16;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    .menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+
+    .sideMenu input:checked~ul {
+        transform: none;
+    }
+
+    .btn {
+        margin-left: 100px;
+    }
+
+    .br {
+        display: none;
+    }
+
+    .formPad {
+        padding-right: 80px;
+    }
+
+    .hr {
+        margin-left: 120px;
+
+    }
+
+    .titreSett {
+        margin-top: 100px;
+        margin-right: 50px;
+    }
+
+}
